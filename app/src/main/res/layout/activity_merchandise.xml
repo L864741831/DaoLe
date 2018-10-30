@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGrey"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.tck.daole.activity.MerchandiseActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_merchandise"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@mipmap/def"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_merchandise_path"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <View
+                    android:visibility="visible"
+                    android:id="@+id/View"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="15dp"
+                        android:src="@mipmap/jump_left" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+            <!--<View-->
+            <!--android:layout_width="1200dp"-->
+            <!--android:layout_height="300dp"-->
+            <!--android:layout_marginLeft="-300dp"-->
+            <!--android:layout_marginTop="300dp"-->
+            <!--android:background="#ffffff"-->
+            <!--android:rotation="8" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="290dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_xiexian"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp">
+
+
+
+                    <CheckBox
+
+                        android:id="@+id/merchandise_shoucang"
+                        android:layout_width="18dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/shoucang_selector"
+                        android:layout_marginRight="10dp"
+                        android:button="@null"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_merchandise_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="名称名称"
+                        android:textColor="@color/content_color"
+                        android:layout_below="@+id/merchandise_shoucang"
+                        android:textSize="15sp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_merchandise_yueshou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="月售123份"
+                        android:textColor="@color/hintColor"
+                        android:textSize="10sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_merchandise_beizhu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="备注备注备注备注备注备注备注"
+                            android:textColor="@color/hintColor"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_merchandise_jiage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="¥111"
+                            android:textColor="@color/red"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_dianpu" />
+
+                        <TextView
+                            android:id="@+id/tv_merchandise_dianpuming"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="店铺名"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/btn_Merchandise_jian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_jian" />
+
+                        <TextView
+                            android:id="@+id/tv_Merchandise_sum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginRight="9dp"
+                            android:text="1"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/btn_Merchandise_jia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_jia" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height"
+                    android:background="@color/lineGrey" />
+
+                <TextView
+                    android:id="@+id/tv_merchandise_shangpinxinxi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="商品信息"
+                    android:textColor="@color/nomalText"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_merchandise_shangpinjieshao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍"
+                    android:textColor="@color/nomalText"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height"
+                    android:background="@color/lineGrey" />
+
+                <RadioGroup
+                    android:id="@+id/merchandise_pingjia"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/merchandise_haoping"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="好评"
+                        android:textColor="@color/radio_text_selector"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/merchandise_zhongping"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="中评"
+                        android:textColor="@color/radio_text_selector"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/merchandise_chaping"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="差评"
+                        android:textColor="@color/radio_text_selector"
+                        android:textSize="12sp" />
+
+                </RadioGroup>
+
+                <com.tck.daole.view.NiceRecyclerView
+                    android:id="@+id/rv_merchandise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:emptyText="现在还没有数据哦~~"
+                    app:listDirection="VERTICAL" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/ic_gouwuche" />
+
+        <TextView
+            android:id="@+id/tv_price_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥0"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="另需3元配送费"
+            android:textColor="@color/hintColor"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_orange_5"
+            android:gravity="center"
+            android:text="结算"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

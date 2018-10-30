@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/image_spell_path"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:src="@mipmap/def" />
+
+        <TextView
+            android:id="@+id/tv_spell_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="11dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="这是商品名称"
+            android:textColor="@color/nomalText"
+            android:textSize="14sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:lines="1"
+            android:layout_marginTop="2dp"
+            android:text="开放时间段9:00-17:00"
+            android:textColor="@color/hintColor"
+            android:textSize="10sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_spell_loanAmounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="¥10"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_spell_saleNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="已拼1.9万件"
+                android:textColor="@color/hintColor"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

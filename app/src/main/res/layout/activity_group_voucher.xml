@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGrey"
+    android:focusableInTouchMode="true"
+    tools:context="com.tck.daole.activity.SpellParticularsActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/View"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/def"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/ll_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="15dp"
+                            android:src="@mipmap/back" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="这是物品的 名字这是物品的介绍这是物品的名字这是物品的名字这是物品的介绍"
+                    android:textColor="@color/nomalText"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+<LinearLayout
+    android:layout_width="287dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+                <LinearLayout
+                    android:layout_width="287dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥24.5"
+                        android:textColor="@color/red"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="¥30"
+                        android:textColor="@color/gray"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="· 随时退"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="· 过期退"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+</LinearLayout>
+
+                    <Button
+                        android:layout_width="73dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:background="@color/orange"
+                        android:text="立即抢购"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="套餐内容"
+                    android:layout_marginTop="23dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/nomalText"
+                    />
+
+
+                <com.tck.daole.view.NiceRecyclerView
+                    android:id="@+id/rv_group_voucher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_myPosted_Posted"
+                    android:layout_below="@+id/linear"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    app:emptyText="现在还没有数据哦~~"
+                    app:listDirection="VERTICAL" />
+                
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:text="图文详情"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColor="@color/nomalText"
+                    />
+
+                <ImageView
+                    android:layout_width="345dp"
+                    android:layout_height="175dp"
+                    android:src="@mipmap/def" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="8dp"
+                        android:src="@mipmap/back_down"
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="购买须知"
+                        android:textSize="13sp"
+                        android:textColor="@color/nomalText"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/textView2" />
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginTop="15dp"
+                    android:text="有效期:"
+                    android:textColor="@color/content_color"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginTop="15dp"
+                    android:text="2017.05.29至2017.12.27"
+                    android:textColor="@color/nomalText"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginTop="15dp"
+                    android:text="使用规则"
+                    android:textColor="@color/content_color"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginTop="15dp"
+                    android:text="·这是使用规则"
+                    android:textColor="@color/nomalText"
+                    android:layout_marginLeft="19dp"
+                    android:textSize="9sp" />
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/white"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

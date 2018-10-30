@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGrey"
+    android:orientation="vertical"
+    tools:context="com.tck.daole.activity.PersonalCenterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/View"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/jump_left" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="意见反馈"
+                android:textColor="@color/nomalText"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/et_opinion_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="请输入您的反馈意见"
+            android:layout_marginTop="7dp"
+            android:background="@color/white"
+            android:gravity="left|top"
+            android:padding="5dp"
+            />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@color/lineGrey"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/relativeLayout">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25.5dp"
+                  android:layout_centerInParent="true"
+                    android:src="@mipmap/photo"
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.5dp"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@+id/relativeLayout"
+                android:layout_toRightOf="@+id/relativeLayout"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:text="上传照片" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_opinion_phone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:hint="手机号码"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:inputType="phone"
+    />
+
+        <EditText
+            android:visibility="gone"
+            android:layout_width="345.5dp"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:hint="发生时间"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_opinion_feedback"
+                android:layout_width="321dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:background="@color/orange"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

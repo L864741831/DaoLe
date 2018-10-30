@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGrey"
+    android:orientation="vertical"
+    tools:context="com.tck.daole.activity.PersonalCenterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/View"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的收藏"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:text="编辑收货地址"
+            android:textSize="15dp"
+            android:textColor="@color/gray"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/jump_right"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+<LinearLayout
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="全部"
+        android:textColor="@color/orange"
+        android:gravity="center"
+        android:visibility="visible"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/nomalText"
+        android:gravity="center"
+        android:text="店铺"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/nomalText"
+        android:gravity="center"
+        android:text="文章"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/nomalText"
+        android:gravity="center"
+        android:text="超市"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/nomalText"
+        android:gravity="center"
+        android:text="门店"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/nomalText"
+        android:gravity="center"
+        android:text="其他"
+        />
+
+</LinearLayout>
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@color/white"
+    >
+
+    <RadioGroup
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="1dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/shoucang_dianpu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="店铺"
+            android:textColor="@color/radio_text_selector"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/shoucang_shangpin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="商品"
+            android:textColor="@color/radio_text_selector"
+            android:textSize="13sp" />
+
+    </RadioGroup>
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+    <com.tck.daole.view.NiceRecyclerView
+        android:id="@+id/rv_shoucang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_myPosted_Posted"
+        android:layout_below="@+id/linear"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        app:emptyText="现在还没有数据哦~~"
+        app:listDirection="VERTICAL" />
+
+
+</LinearLayout>

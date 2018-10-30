@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGrey">
+
+
+    <com.tck.daole.view.ObservableScrollView
+        android:id="@+id/sv_spell_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear">
+
+
+        <!--             android:descendantFocusability="blocksDescendants"
+防止scrollview直接滑到底部-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/img_booking"
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:orientation="vertical">
+
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/tltle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="这是物品的 名字这是物品的介绍这是物品的名字这是物品的名字这是物品的介绍"
+                    android:textColor="@color/nomalText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥24.5"
+                        android:textColor="@color/red"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/spell_yuanjia"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="¥30"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_marginTop="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="· 随时退  · 过期退"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp"
+                        android:visibility="visible"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2人在拼单，可直接参与"
+                        android:textColor="@color/nomalText"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="11dp"
+                        android:src="@mipmap/jump_right" />
+                </LinearLayout>
+
+                <com.tck.daole.view.NiceRecyclerView
+                    android:id="@+id/rv_spell"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    app:emptyText="现在还没有数据哦~~"
+                    app:listDirection="VERTICAL" />
+            </LinearLayout>
+
+
+            <com.tck.daole.view.NiceRecyclerView
+                android:id="@+id/rv_spell_particulars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:emptyText="现在还没有数据哦~~"
+                app:listDirection="VERTICAL" />
+
+            <RelativeLayout
+                android:id="@+id/rl_appraise"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="......"
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="购票须知"
+                android:textColor="@color/nomalText"
+                android:textSize="12sp"
+                android:id="@+id/notice"/>
+
+            <com.tck.daole.view.NiceRecyclerView
+                android:id="@+id/rv_spell_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                app:emptyText="现在还没有数据哦~~"
+                app:listDirection="VERTICAL" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_booking_detail"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="有效期有效期有效期有效期有效期有效期
+有效期有效期有效期有效期有效期有效期有效期有效期有效期有效期有效期有效期
+有效期有效期有效期有效期有效期有效期有效期有效期有效期有效期有效期有效期
+有效期有效期有效期有效期有效期有效期有效期有效期有效期有效期有效期有效期
+有效期有效期有效期有效期有效期有效期" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </com.tck.daole.view.ObservableScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_header_spell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/View"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/back" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFAE5E"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥30原价购买"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF2626"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥24.5发起拼单"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_goumai_lepingou"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

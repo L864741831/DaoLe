@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGrey"
+    tools:context="com.tck.daole.activity.PostedParticularsActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/View"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="15dp"
+                            android:src="@mipmap/jump_left" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/title_posted_particulars_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="德国画家温德尔哈尔特"
+                        android:textColor="@color/nomalText"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/img_posted_particulars_head"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:src="@mipmap/touxiang" />
+
+                <TextView
+                    android:id="@+id/tv_posted_particulars_nickname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="三三"
+                    android:textColor="@color/nomalText"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_posted_particulars_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-11-30"
+                    android:textColor="@color/gray"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_posted_particulars_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="德国画家温德尔哈尔特"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/def" />
+
+                <TextView
+                    android:id="@+id/tv_posted_particulars_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="德国画家温德尔哈尔特（Franz Xaver Winterhalter，1805年4月20日-1873年7月8日）是一位德国学院艺术派的古典主义画家，擅长人物肖像画，以绘制欧洲皇室肖像画而闻名。"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="# 类型 #"
+                        android:textColor="@color/hintColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="# 类型 #"
+                        android:textColor="@color/hintColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_posted_particulars_kanguo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="1299人看过"
+                        android:textColor="@color/gray"
+                        android:textSize="9dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_posted_particulars_pinglunshuliang"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="评论（0）"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:id="@+id/img_posted_particulars_shoucang"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/shoucang_selector"
+                    android:button="@null"
+ />
+            </LinearLayout>
+
+            <com.tck.daole.view.NiceRecyclerView
+                android:id="@+id/rv_posted"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                app:emptyText="现在还没有数据哦~~"
+                app:listDirection="VERTICAL" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="#E1E1E1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="7dp"
+                android:src="@mipmap/liaotian_fabu" />
+
+            <EditText
+                android:id="@+id/et_posted_particulars_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/rect_stroke_white_5" />
+
+            <TextView
+                android:id="@+id/tv_posted_particulars_send"
+                android:layout_width="50dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/round_orange_5"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

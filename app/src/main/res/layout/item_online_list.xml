@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_index_isTj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_online_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="这是推荐的文章的标题"
+                android:textColor="@color/nomalText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_online_publishdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-11-30"
+                android:textColor="@color/hintColor"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_content_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="这是告诉我们用户的信息简略介绍或副标题这是告诉我们用户的信息简略介绍或副标题"
+            android:textColor="@color/hintColor"
+            android:textSize="11dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_online_pageview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1299人看过"
+                android:textColor="@color/hintColor"
+                android:textSize="9dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/ic_shoucang_yes" />
+
+            <TextView
+                android:id="@+id/tv_online_likenumber"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="123"
+                android:textColor="@color/hintColor"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/pinglun_fabu" />
+
+            <TextView
+                android:id="@+id/tv_online_commentnumber"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="123"
+                android:textColor="@color/hintColor"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

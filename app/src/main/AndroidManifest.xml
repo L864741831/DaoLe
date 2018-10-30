@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tck.daole">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- SD卡权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    -
+    <!-- 定位 -->
+    -
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    -
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    -
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    -
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 获取设备当前位置的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.tck.daole.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:launchMode="singleTask" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SpellActivity" />
+        <activity android:name=".activity.StoreInformationActivity" />
+        <activity android:name=".activity.ShopAppraiseActivity" />
+        <activity android:name=".activity.MerchandiseActivity" />
+        <activity android:name=".activity.TakeoutActivity" />
+        <activity android:name=".activity.ShopActivity" />
+        <activity android:name=".activity.GroupActivity" />
+        <activity android:name=".activity.MarketActivity" />
+        <activity android:name=".activity.SpellParticularsActivity" />
+        <activity android:name=".activity.SpellOrderActivity" />
+        <activity android:name=".activity.PersonalCenterActivity" />
+        <activity android:name=".activity.MyPostedActivity" />
+        <activity android:name=".activity.PostedParticularsActivity" />
+        <activity android:name=".activity.PurseActivity" />
+        <activity android:name=".activity.SystemSetActivity" />
+        <activity android:name=".activity.FlowerActivity" />
+        <activity android:name=".activity.AppraiseActivity" />
+        <activity android:name=".activity.ShopcatActivity" />
+        <activity android:name=".activity.BookingParticularsActivity" />
+        <activity android:name=".activity.OrderSpellActivity" />
+        <activity android:name=".activity.GroupParticularsActivity" />
+        <activity android:name=".activity.ShopSearchActivity" />
+
+
+
+        <activity
+            android:name=".activity.OpinionActivity"
+            android:label="@string/title_activity_opinion"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.TravelActivity"
+            android:label="@string/title_activity_travel"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.SystemMsgActivity"
+            android:label="@string/title_activity_system_msg"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.AboutArrive"
+            android:label="@string/title_activity_about_arrive"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ModifyPasswordActivity"
+            android:label="@string/title_activity_modify_password"
+            android:theme="@style/AppTheme" />
+        <!--<activity-->
+            <!--android:name=".activity.AddCardActivity"-->
+            <!--android:label="@string/title_activity_add_card"-->
+            <!--android:theme="@style/AppTheme" />-->
+        <activity
+            android:name=".activity.CollectionActivity"
+            android:label="@string/title_activity_collection"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.RechargeActivity"
+            android:label="@string/title_activity_recharge"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.EnterpriseSettledActivity"
+            android:label="@string/title_activity_enterprise_settled"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.AddAdressActivity"
+            android:label="@string/title_activity_add_adress"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.OrderDetailsActivity"
+            android:label="@string/title_activity_order"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ReleaseActivity"
+            android:label="@string/title_activity_release"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.EvaluationActivity"
+            android:label="@string/title_activity_evaluation"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.AddressCollectionActivity"
+            android:label="@string/title_activity_address_collection"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.RefundActivity"
+            android:label="@string/title_activity_refund"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.InvitationFriendActivity"
+            android:label="@string/title_activity_invitation_friend"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.TransavtionRecordActivity"
+            android:label="@string/title_activity_transavtion_record"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.LocationActivity"
+            android:label="@string/title_activity_location"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ShopNameActivity"
+            android:label="@string/title_activity_shop_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.GroupVoucherActivity"
+            android:label="@string/title_activity_group_voucher"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.RecordActivity" />
+        <activity android:name=".activity.RechargeRecordActivity" />
+        <activity
+            android:name=".activity.CashCouponActivity"
+            android:label="@string/title_activity_cash_coupon"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.NickNameActivity"
+            android:label="@string/title_activity_nick_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.AutographActivity"
+            android:label="@string/title_activity_autograph"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ForumActivity"
+            android:label="@string/title_activity_forum"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.BookingActivity"
+            android:label="@string/title_activity_booking"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.MyCollectionActivity"
+            android:label="@string/title_activity_my_collection"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:label="@string/title_activity_forget_password"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.AddMyPostedActivity"
+            android:label="@string/title_activity_add_my_posted"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".activity.BindPhoneActivity"
+            android:label="@string/title_activity_add_my_posted"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".activity.PhoneChargeActivity"
+            android:label="@string/title_activity_add_my_posted"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".activity.LiuliangChargeActivity"
+            android:label="@string/title_activity_add_my_posted"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".activity.GamesSelectActivity"
+            android:label="@string/title_activity_add_my_posted"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".activity.GamesChargeActivity"
+            android:label="@string/title_activity_add_my_posted"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".activity.FuelChargeActivity"
+            android:label="@string/title_activity_add_my_posted"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".activity.WaterChargeActivity"
+            android:label="@string/title_activity_add_my_posted"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".activity.ElectricChargeActivity"
+            android:label="@string/title_activity_add_my_posted"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".activity.GasChargeActivity"
+            android:label="@string/title_activity_add_my_posted"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".activity.PayActivity"
+            android:label="@string/title_activity_add_my_posted"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5a6f00e6b27b0a3eb500016b">
+        </meta-data>
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106636109" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".activity.DingDanPageActivity"
+            android:label="@string/title_activity_ding_dan_page"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

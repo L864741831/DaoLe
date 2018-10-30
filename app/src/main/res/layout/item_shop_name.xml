@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="102dp"
+    android:layout_height="113dp"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/img_shangpin"
+        android:layout_width="92dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/def"
+        android:layout_centerHorizontal="true"
+         />
+
+    <TextView
+        android:id="@+id/tv_yifen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_shangpin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="10sp"
+        android:text="一份套餐"
+        android:textColor="@color/hintColor" />
+
+    <LinearLayout
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_yifen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+     >
+
+        <!-- //在代码中设置加粗
+        txt2.getPaint().setFlags(Paint.FAKE_BOLD_TEXT_FLAG);  -->
+
+
+        <TextView
+            android:id="@+id/tv_xianjia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="¥25"
+            android:textColor="@color/colorfenred"
+            android:textSize="9sp"
+            android:gravity="center_horizontal"
+            />
+
+
+        <!-- //添加删除线
+        txt1.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);  -->
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_yuanjia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="¥33"
+            android:textSize="8sp"
+            android:gravity="right"
+
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:background="@color/white"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="75dp"
+    android:layout_centerInParent="true"
+    android:background="@mipmap/image_daijinquan"
+    android:orientation="horizontal"
+    >
+
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="180"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="100"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¥"
+        android:textSize="24sp"
+        android:textColor="@color/bigred"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="22dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_cash_jine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25"
+        android:textSize="43sp"
+        android:textColor="@color/bigred"
+        android:layout_gravity="bottom"
+        />
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        >
+
+        <TextView
+            android:id="@+id/tv_cash_manjian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="满1000可用"
+            android:textSize="9sp"
+android:layout_marginLeft="26dp"
+            android:textColor="@color/bigorange"/>
+    </RelativeLayout>
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="46"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="11sp"
+            android:layout_height="wrap_content"
+            android:text="分享领券"
+            android:textSize="9sp"
+android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/bigorange"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="476"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:gravity="left"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优惠券名称"
+                android:id="@+id/tv_cash_mingcheng"
+                android:layout_above="@+id/tv_cash_zhuanxiang"
+                android:layout_alignLeft="@+id/tv_cash_zhuanxiang"
+                android:layout_alignStart="@+id/tv_cash_zhuanxiang"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/nomalText"
+                />
+
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:id="@+id/tv_cash_zhuanxiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在线支付专享"
+                android:layout_centerInParent="true"
+                android:textSize="10sp"
+                android:textColor="@color/content_color"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_cash_youxiaoqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有效期至"
+                android:layout_below="@+id/tv_cash_zhuanxiang"
+                android:layout_alignLeft="@+id/tv_cash_zhuanxiang"
+                android:layout_alignStart="@+id/tv_cash_zhuanxiang"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/content_color"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/tv_cash_jine_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="10dp"
+                android:text="25"
+                android:textColor="@color/littlered"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_cash_jine_two"
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@+id/tv_cash_jine_two"
+                android:layout_toStartOf="@+id/tv_cash_jine_two"
+                android:text="¥"
+                android:textColor="@color/littlered"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:id="@+id/tv_cash_manjian_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="满108可用"
+                android:layout_below="@+id/tv_cash_jine_two"
+                android:textSize="13sp"
+                android:textColor="@color/hintColor"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+                 />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

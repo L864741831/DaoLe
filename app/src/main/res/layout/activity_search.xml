@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGrey"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.tck.daole.activity.SpellActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/View"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/orange"
+            />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_fanhui"
+        android:layout_width="0dp"
+        android:layout_weight="76"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:background="@mipmap/back"
+android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="644"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_white_100"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_value"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableRight="@mipmap/back_down"
+            android:padding="5dp"
+            android:textColor="@color/nomalText"
+            android:text="商家"
+            android:gravity="center"
+            android:background="#FFB86B"
+            android:textSize="9sp"/>
+
+
+        <EditText
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:id="@+id/search_huiche"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:hint="商家搜索"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="30"
+        android:layout_height="match_parent">
+
+    </TextView>
+
+
+
+</LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史搜索"
+            android:layout_centerVertical="true"
+            android:id="@+id/textView8"
+            android:textSize="14sp"
+            android:textColor="@color/nomalText"
+            />
+
+        <TextView
+            android:id="@+id/btn_remove_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView8"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textSize="10sp"
+            android:textColor="@color/hintColor"
+            android:text="清除历史" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content">
+
+
+            <com.tck.daole.view.FlowLayout
+                android:id="@+id/flowlayout_lishi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="-1dp"
+                android:paddingRight="-1dp"
+                app:lineSpacing="7dp"
+                app:maxLine="3"
+                >
+
+            </com.tck.daole.view.FlowLayout>
+
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门搜索"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:textColor="@color/nomalText"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content">
+
+        <com.tck.daole.view.YhFlowLayout
+            android:id="@+id/flowlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </com.tck.daole.view.YhFlowLayout>
+
+
+    </ScrollView>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/btn_add_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="add"
+        android:padding="10dp"
+        android:background="#48a0a3"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</LinearLayout>

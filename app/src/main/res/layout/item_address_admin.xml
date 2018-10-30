@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backGrey"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:gravity="center"
+    android:id="@+id/ll_select_address"
+    >
+
+
+
+<RelativeLayout
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="25dp">
+
+<TextView
+    android:id="@+id/address_list_name"
+    android:layout_marginLeft="5dp"
+    android:layout_alignParentLeft="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="名字"
+    android:textColor="@color/content_color"
+    />
+
+    <TextView
+        android:id="@+id/address_list_phone"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13285696325"
+        android:textColor="@color/content_color"
+        />
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/address_list_address"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址"
+            android:textColor="@color/content_color"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="20dp">
+
+
+        <CheckBox
+            android:clickable="false"
+            android:id="@+id/address_check_moren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认地址"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_bianji_address"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:textColor="@color/content_color"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_delete_address"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textColor="@color/content_color"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

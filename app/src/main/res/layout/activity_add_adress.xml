@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGrey"
+    android:orientation="vertical"
+    tools:context="com.tck.daole.activity.PersonalCenterActivity">
+    -
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/View"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+        -
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            -
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/jump_left" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/address_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="添加新地址"
+                android:textColor="@color/nomalText"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="17.5dp"
+                android:text="保存"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+    -
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.5dp"
+            android:text="收货人 ："
+            android:textColor="@color/nomalText"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/et_address_people"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical|left"
+            android:text=""
+            android:textColor="@color/nomalText"
+            android:textSize="15dp" />
+    </LinearLayout>
+    -
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.5dp"
+            android:text="电话 ："
+            android:textColor="@color/nomalText"
+            android:textSize="15dp" />
+
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/et_address_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical|left"
+            android:text=""
+            android:textColor="@color/nomalText"
+            android:textSize="15dp" />
+    </LinearLayout>
+    -
+
+    <RelativeLayout
+        android:id="@+id/rl_diqu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15.5dp"
+            android:gravity="center_vertical"
+            android:text="地区 ："
+            android:textColor="@color/nomalText"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_diqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:text="河南省郑州市中原区"
+            android:textColor="@color/nomalText"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/jump_right" />
+    </RelativeLayout>
+    -
+
+    <RelativeLayout
+        android:id="@+id/rl_jiedao"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15.5dp"
+            android:gravity="center_vertical"
+            android:text="街道 ："
+            android:textColor="@color/nomalText"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_jiedao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:text="秦岭路街道"
+            android:textColor="@color/nomalText"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/jump_right" />
+    </RelativeLayout>
+    -
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/et_address_xiangxi_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="详细地址"
+            android:textColor="@color/hintColor"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add_address"
+        android:layout_width="345dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@color/orange"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="13dp" />
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/backGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_item_myPosted_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="德国画家温德尔哈尔特"
+                android:textColor="@color/nomalText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_item_myPosted_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-11-30"
+                android:textColor="@color/hintColor"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/lineGrey" />
+
+        <TextView
+            android:id="@+id/tv_item_myPosted_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="德国画家温德尔哈尔特（Franz Xaver Winterhalter，1805年4月20日-1873年7月8日）是一位德国学院艺术派的古典主义画家，擅长人物肖像画，以绘制欧洲皇室肖像画而闻名。"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/lineGrey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="# 类型 #"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="# 类型 #"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="13dp"
+                    android:src="@mipmap/ic_shoucang_yes" />
+
+                <TextView
+                    android:id="@+id/tv_item_myPosted_likenumber"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="123"
+                    android:textColor="@color/gray"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/pinglun_fabu" />
+
+                <TextView
+                    android:id="@+id/tv_item_myPosted_commentnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="123"
+                    android:textColor="@color/gray"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

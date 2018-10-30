@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NiceRecyclerView">
+        <!--RecyclerView 是listview还是gridview-->
+        <attr name="listDirection">
+            <!--gridview-->
+            <enum name="HORIZONTAL" value="0" />
+            <!--listview-->
+            <enum name="VERTICAL" value="1" />
+        </attr>
+        <!--列表为空提示语-->
+        <attr name="emptyText" format="string" />
+        <!--为空提示语第一次是否显示-->
+        <attr name="isFirstShowEmptyText" format="boolean" />
+        <!--为空提示语是否显示-->
+        <attr name="isShowEmptyText" format="boolean" />
+        <!--gridview每行显示数量-->
+        <attr name="gridNum" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="lineSpacing" format="dimension" />
+        <attr name="maxLine" format="integer" />
+    </declare-styleable>
+
+</resources>
+

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backGrey"
+    android:layout_marginTop="8dp"
+>
+    
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/backGrey"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:text="系统消息"
+            android:textColor="@color/nomalText"
+            android:textSize="15sp"
+            android:id="@+id/tv_news_title" />
+
+        <TextView
+            android:id="@+id/msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_news_title"
+            android:layout_alignBottom="@+id/tv_news_title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:text="2017-11-30 12:12"
+            android:textColor="@color/hintColor"
+            android:textSize="9sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/tv_news_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:text="尊敬的用户，已经收到您的反馈，在您结束订单后，我们会尽快反应结果"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+    />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

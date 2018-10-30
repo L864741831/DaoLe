@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="套餐内容"
+            android:layout_marginLeft="15dp"
+            android:textSize="12sp"
+            android:textColor="@color/nomalText"
+            android:id="@+id/tv_caiming" />
+
+        <TextView
+            android:id="@+id/tv_fenshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/tv_caiming"
+            android:layout_toRightOf="@+id/tv_caiming"
+            android:text="(1份)"
+            android:textColor="@color/hintColor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp"
+            android:textColor="@color/nomalText"
+            android:text="套餐内容" />
+    </RelativeLayout>
+

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backGrey"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    android:id="@+id/content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backGrey" />
+
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" >
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@drawable/check_box_bg"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:gravity="center"
+            android:minHeight="18dp"
+            android:minWidth="32dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@mipmap/ic_dianpu"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/determine_chekbox"/>
+
+        <TextView
+            android:id="@+id/tv_order_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/white"
+            android:layout_toRightOf="@+id/img_dianpu"
+            android:drawablePadding="10dp"
+            android:text=""
+            android:textColor="@color/grey_color2"
+            android:textSize="12sp" />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="180dp"
+            android:background="@mipmap/dianpu_right"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_order_shop_status"
+            android:visibility="visible"
+            android:textSize="12sp"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:background="@null"
+            android:text=""/>
+    </RelativeLayout>
+    
+    
+    
+    
+    <com.tck.daole.view.NiceRecyclerView
+        android:id="@+id/rv_shop_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.tck.daole.view.NiceRecyclerView>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp">
+
+            <TextView
+                android:id="@+id/tv_order_shop_count_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+
+            <TextView
+                android:id="@+id/tv_order_shop_delete"
+                android:padding="5dp"
+                android:layout_width="68dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="删除订单"
+                android:textColor="@color/content_color"
+                android:textSize="13sp"
+                android:background="@drawable/order_btn_white_shape"/>
+
+            <TextView
+                android:id="@+id/tv_order_shop_exit"
+                android:layout_marginLeft="8dp"
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退货"
+                android:textColor="@color/content_color"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_order_shop_again"
+                android:layout_marginLeft="8dp"
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="再次购买"
+                android:textColor="@color/content_color"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_order_shop_ok"
+                android:layout_marginLeft="8dp"
+                android:padding="5dp"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:text="确认按钮"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:background="@drawable/order_btn_orange_shape" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

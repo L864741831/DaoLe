@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGrey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backGrey"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/View"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/jump_left" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="关于到了"
+                android:textColor="@color/nomalText"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="17dp"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="點8网"
+            android:textSize="15sp"
+            android:textColor="@color/hintColor"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="到了简介"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@color/orange"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="用户协议"
+                android:textSize="15dp"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="帮助说明"
+                android:textSize="15dp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="355dp"
+            android:layout_height="545dp"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8.5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:text="这是到了简介，用户协议，帮助说明页
+这是到了简介，用户协议，帮助说明页
+这是到了简介，用户协议，帮助说明页
+这是到了简介，用户协议，帮助说明页
+这是到了简介，用户协议，帮助说明页
+这是到了简介，用户协议，帮助说明页
+这是到了简介，用户协议，帮助说明页
+这是到了简介，用户协议，帮助说明页
+这是到了简介，用户协议，帮助说明页
+这是到了简介，用户协议，帮助说明页
+这是到了简介，用户协议，帮助说明页
+这是到了简介，用户协议，帮助说明页
+这是到了简介，用户协议，帮助说明页
+这是到了简介，用户协议，帮助说明页
+"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Copyright©2016天津唐朝客科技有限公司\nall right reserved"
+        android:textColor="#777777"
+        android:textSize="12sp"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/copyright"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:text="天津唐朝客科技有限公司"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,374 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="发布类型"
+android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/orange"
+            android:gravity="center"
+            android:textSize="12dp"
+
+            android:background="@drawable/textview_border"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/hintColor"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/textview_border_hint"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/hintColor"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/textview_border_hint"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/hintColor"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/textview_border_hint"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/hintColor"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/textview_border_hint"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/hintColor"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/textview_border_hint"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/hintColor"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/textview_border_hint"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/hintColor"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/textview_border_hint"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/hintColor"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/textview_border_hint"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/hintColor"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/textview_border_hint"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/hintColor"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/textview_border_hint"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/hintColor"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/textview_border_hint"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/hintColor"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/textview_border_hint"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/hintColor"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/textview_border_hint"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/hintColor"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/textview_border_hint"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="类型类型"
+            android:textColor="@color/hintColor"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:background="@drawable/textview_border_hint"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="54dp">
+
+    <Button
+        android:id="@+id/release_type"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:background="@color/orange"
+        android:text="确定"
+        android:textSize="10dp"
+        android:textColor="@color/white" />
+</RelativeLayout>
+
+
+</LinearLayout>

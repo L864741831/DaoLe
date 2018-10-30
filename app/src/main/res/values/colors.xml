@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    
+    <color name="colorred">#FF3A3A</color>
+
+    <color name="colorfenred">#ff2B2B</color>
+
+    <color name="orange">#EE8F29</color>
+    <color name="blue">#00a2ff</color>
+    <color name="gray">#666666</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF2E2E</color>
+    <color name="yellows">#FEE32A</color>
+
+    <color name="backGrey">#FDFAF0</color>
+    <color name="lineGrey">#FDFAF0</color>
+
+    <color name="hintColor">#999999</color>
+    <color name="nomalText">#333333</color>
+
+    <color name="send">#C7C7C7</color>
+    <color name="tiaokuan">#44B3De</color>
+
+    <color name="white_normal">#ffffffff</color>
+    <color name="content_color">#666666</color>
+
+    <color name="fuli_yellow_zi">#FEE858</color>
+    <color name="fuli_yellow_daijinquan">#FFE000</color>
+
+
+    <color name="text_color_gray">#b5b5b5</color>
+    <color name="green">#009E8F</color>
+
+
+    <color name="bigred">#EE0C2A</color>
+
+    <color name="bigorange">#E98723</color>
+
+    <color name="littlered">#FF1D1D</color>
+
+    <color name="hui">#F8F8F8</color>
+
+
+
+
+    <color name="main_top_color">#f7614d</color>
+    <color name="main_top_tab_color">#fcc9c5</color>
+    <color name="main_top_tab_color_2">#ffffff</color>
+
+    <color name="matrix_color">#ffffff</color>
+
+
+    <color name="grey_color2">#666666</color>
+
+    <!-- 橙色 -->
+    <color name="orange_color">#de6838</color>
+
+    <!-- 灰色 -->
+    <color name="grey_color1">#333333</color>
+
+    <color name="page_backgroup">#f2f2f2</color>
+
+    <!-- 西红柿色 -->
+    <color name="orangered">#ff4500</color>
+
+    <!-- 淡灰色 -->
+    <color name="crimson">#dc143c</color>
+
+
+    <color name="colorGreen">#3cda38</color>
+    <color name="colorRed">#ec0909</color>
+    <color name="colorYellow">#ff8800</color>
+
+</resources>
